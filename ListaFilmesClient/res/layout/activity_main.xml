@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="br.com.fiap.listafilmes.MainActivity" >
+
+    <RadioGroup
+        android:id="@+id/rgCategoria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#AAAAFF"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radioAcao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/radio_acao" />
+
+        <RadioButton
+            android:id="@+id/radioTerror"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_terror" />
+    </RadioGroup>
+
+    <ListView
+        android:id="@+id/filmesLV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rgCategoria"
+        android:layout_centerHorizontal="true" >
+    </ListView>
+
+</RelativeLayout>
